@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:padding="30dp"
+    tools:context=".MainActivity">
+
+    <!-- Titre de bienvenue avec une ombre pour la lisibilité -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Bienvenue"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:layout_marginBottom="40dp" />
+
+    <!-- Champ Email -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:layout_marginBottom="5dp"/>
+
+    <EditText
+        android:id="@+id/edEmail_auth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Entrez votre email"
+        android:inputType="textEmailAddress"
+        android:textColor="#333333"
+        android:background="#CCFFFFFF"
+        android:padding="12dp"
+        android:layout_marginBottom="15dp"/>
+
+    <!-- Champ Mot de passe -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mot de passe"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:layout_marginBottom="5dp"/>
+
+    <EditText
+        android:id="@+id/edPwd_auth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Entrez votre mot de passe"
+        android:inputType="textPassword"
+        android:textColor="#333333"
+        android:background="#CCFFFFFF"
+        android:padding="12dp"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- Bouton Valider -->
+    <Button
+        android:id="@+id/btnValider_ath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Valider"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#4CAF50"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Bouton Quitter -->
+    <Button
+        android:id="@+id/btnQte_auth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quitter"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#E32424" />
+
+</LinearLayout>
